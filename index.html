@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Xu Shuyao — Electrical Engineering (minor in AI & CS) at NUS. AI × Quantitative Trading. Co-founder & CEO, Alpha Flow.">
+  <meta name="author" content="Xu Shuyao">
+  <title>Xu Shuyao</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <aside class="side">
+      <div class="side-inner">
+        <h1 class="name">Xu Shuyao</h1>
+        <img class="photo" src="images/photo.jpg" alt="Photo of Xu Shuyao" width="200" height="200">
+        <p class="tagline">AI × Quantitative Trading</p>
+        <nav class="links">
+          <a href="assets/cv.pdf" target="_blank" rel="noopener">curriculum vitae</a>
+          <a href="https://github.com/davidxu277" target="_blank" rel="noopener">github</a>
+          <a href="https://www.linkedin.com/in/xushuyao-nus/" target="_blank" rel="noopener">linkedin</a>
+          <a href="mailto:xushuyao@u.nus.edu">email</a>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section id="about">
+        <p>I am an undergraduate in <strong>Electrical Engineering (minor in AI &amp; CS)</strong> at the National University of Singapore, supported by the Science &amp; Technology Scholarship. In summer 2026 I studied machine learning and convex optimization at Stanford University through the International Honor Program.</p>
+        <p>I co-founded <strong>Alpha Flow</strong>, an early-stage startup building world-model training infrastructure for AI-driven quantitative trading. As CEO, I set the company's direction and guide the architecture of our alpha-discovery systems.</p>
+        <p>My work sits where machine learning meets markets. Topics I am working on:</p>
+        <ul>
+          <li>market regime modeling — knowing what state the market is in before deciding what to do,</li>
+          <li>world models of market dynamics,</li>
+          <li>machine learning for alpha discovery, with strict out-of-sample discipline,</li>
+          <li>autonomous agents that run and verify their own experiments.</li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="item">
+          <p class="item-title">Alpha Timing — Regime-Aware Quantitative Trading System</p>
+          <p class="item-meta">Jun – Jul 2026</p>
+          <p>A market-regime classifier routes each trading day to one of four regime-specialist return predictors; a cost-aware dual-threshold rule with volatility targeting sets the position. Out-of-sample on SPY, net of 5 bps costs: Sharpe 1.05 vs 0.69 for buy-and-hold, max drawdown −14% vs −25%.</p>
+          <p class="tags"><a href="https://github.com/davidxu277/alpha-timing" target="_blank" rel="noopener">Code</a><span class="sep">|</span><a href="https://davidxu277.github.io/alpha-timing/" target="_blank" rel="noopener">Live dashboard</a></p>
+        </div>
+
+        <div class="item">
+          <p class="item-title">Regime Classifier — Market-Regime Nowcaster</p>
+          <p class="item-meta">Jul 2026</p>
+          <p>A supervised RandomForest that classifies the current market state — Bull, Bear, Sideways or Crisis — from trailing price and macro features across 39 US tickers, 2000–2026. Out-of-sample (2019–2026): accuracy 0.877, macro F1 0.846. It is the first stage of Alpha Timing.</p>
+          <p class="tags"><a href="https://github.com/davidxu277/regime-classifier" target="_blank" rel="noopener">Code</a></p>
+        </div>
+
+        <div class="item">
+          <p class="item-title">ML Doctor — Autonomous ML Research Agent</p>
+          <p class="item-meta">Aug – Sep 2026 · TikTok TechJam 2026</p>
+          <p>An agent that runs the full model-improvement loop unattended: it diagnoses from its own scorecard, proposes and justifies a remedy, writes the code, retrains, then checks whether its hypothesis held. I owned the agent brain — a four-role LLM relay and the outer control loop.</p>
+          <p class="tags"><a href="https://github.com/davidxu277/GOAT-LeBron" target="_blank" rel="noopener">Code</a></p>
+        </div>
+
+        <div class="item">
+          <p class="item-title">FinSight Agent — AI Equity Research</p>
+          <p class="item-meta">Jul 2026</p>
+          <p>One command turns a US ticker into a cited research report: financials from SEC EDGAR, analysis code that Claude writes and actually executes, and live web research with provenance kept for every claim.</p>
+          <p class="tags"><a href="https://github.com/davidxu277/finsight-agent" target="_blank" rel="noopener">Code</a></p>
+        </div>
+
+        <div class="item">
+          <p class="item-title">Financial AI Agent — Savings Planning System</p>
+          <p class="item-meta">Aug – Oct 2026</p>
+          <p>A full-stack TypeScript monorepo (Next.js, Fastify, PostgreSQL via Prisma) that turns transaction history into a savings plan, with human-in-the-loop review of AI classifications and an OpenAI Agents SDK workflow.</p>
+          <p class="tags"><a href="https://github.com/davidxu277/financial-ai-agent" target="_blank" rel="noopener">Code</a></p>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <div class="item">
+          <p class="item-title">Co-founder &amp; CEO, Alpha Flow</p>
+          <p class="item-meta">Jul 2026 – present</p>
+          <p>Building world-model training infrastructure for AI-driven quantitative trading. Our research includes <a href="https://github.com/hongjin-he/MicroWorld" target="_blank" rel="noopener">MicroWorld</a>, a multi-agent world model of US equity markets (with co-founder HongJin He).</p>
+        </div>
+        <div class="item">
+          <p class="item-title">Head of Events, NUS Chinese Debate</p>
+          <p class="item-meta">Apr 2026 – present</p>
+          <p>Run orientation and year-round recruitment, international friendly competitions, and overseas debate trips.</p>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="item">
+          <p class="item-title">National University of Singapore</p>
+          <p class="item-meta">Bachelor of Electrical Engineering (minor AI &amp; CS) · Aug 2025 – May 2029</p>
+          <p>GPA 4.8 / 5.0</p>
+        </div>
+        <div class="item">
+          <p class="item-title">Stanford University</p>
+          <p class="item-meta">International Honor Program — Machine Learning &amp; Mathematics · Jun – Aug 2026</p>
+          <p>CS 229 Machine Learning · EE 364A Convex Optimization I · ME 344S HPC-AI Summer Seminar Series</p>
+        </div>
+      </section>
+
+      <section id="honors">
+        <h2>Honors</h2>
+        <ul class="plain">
+          <li>Science &amp; Technology Scholarship, National University of Singapore <span class="item-meta">2024</span></li>
+          <li>Champion, Singapore Chinese Debate Championship</li>
+        </ul>
+      </section>
+
+      <footer>Last updated October 2026</footer>
+    </main>
+  </div>
+</body>
+</html>
