@@ -33,6 +33,7 @@ a:hover { text-decoration: underline; }
 .sep { color: var(--rule); padding: 0 8px; }
 .plain { list-style: none; padding-left: 0 !important; }
 .plain li { margin-bottom: 8px; }
+.courses { list-style: none; padding-left: 0 !important; margin: 0; }
 footer { color: var(--muted); font-size: 13px; border-top: 1px solid var(--rule); padding-top: 16px; }
 
 @media (max-width: 767px) {
